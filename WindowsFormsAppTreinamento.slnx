@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="ClassLibraryBus/ClassLibraryBus.csproj" />
+  <Project Path="ClassLibraryDao/ClassLibraryDao.csproj" />
+  <Project Path="ClassLibraryMd/ClassLibraryMd.csproj" />
   <Project Path="WindowsFormsAppTreinamento/WindowsFormsAppTreinamento.csproj" />
 </Solution>
