@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblPesquisar = new System.Windows.Forms.Label();
             this.mskCep = new System.Windows.Forms.MaskedTextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
@@ -43,6 +44,7 @@
             this.clmBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmCidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmUf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ttpLegenda = new System.Windows.Forms.ToolTip(this.components);
             this.gbxEndereco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCep)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +73,7 @@
             this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "&Pesquisar";
+            this.ttpLegenda.SetToolTip(this.btnPesquisar, "Pesquisar");
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
@@ -100,6 +103,7 @@
             this.dgvCep.Name = "dgvCep";
             this.dgvCep.Size = new System.Drawing.Size(694, 196);
             this.dgvCep.TabIndex = 0;
+            this.ttpLegenda.SetToolTip(this.dgvCep, "Listagem de Endereços");
             // 
             // btnLimpar
             // 
@@ -108,6 +112,7 @@
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 4;
             this.btnLimpar.Text = "&Limpar";
+            this.ttpLegenda.SetToolTip(this.btnLimpar, "Limpar");
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
@@ -118,6 +123,7 @@
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 5;
             this.btnSair.Text = "&Sair";
+            this.ttpLegenda.SetToolTip(this.btnSair, "Sair");
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
@@ -192,6 +198,7 @@
             this.Controls.Add(this.lblPesquisar);
             this.MaximizeBox = false;
             this.Name = "FrmCep";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CEP - Pesquisar";
             this.Load += new System.EventHandler(this.FrmCep_Load);
             this.gbxEndereco.ResumeLayout(false);
@@ -218,6 +225,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmBairro;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmUf;
+        private System.Windows.Forms.ToolTip ttpLegenda;
     }
 }
 

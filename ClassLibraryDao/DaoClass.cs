@@ -45,8 +45,8 @@ namespace ClassLibraryDao
             _sql = _sql + "(";
             _sql = _sql + "       '" + this.MdClass.Cep.ToString() + "',";
             _sql = _sql + "       '" + this.MdClass.Logradouro.ToString() + "',";
-            _sql = _sql + "       '" + this.MdClass.Numero.ToString() + "',";
-            _sql = _sql + "       '" + this.MdClass.Complemento.ToString() + "',";
+            _sql = _sql + "       '" + this.MdClass.Numero + "',";
+            _sql = _sql + "       '" + this.MdClass.Complemento + "',";
             _sql = _sql + "       '" + this.MdClass.Bairro.ToString() + "',";
             _sql = _sql + "       '" + this.MdClass.Cidade.ToString() + "',";
             _sql = _sql + "       '" + this.MdClass.Uf.ToString() + "'";

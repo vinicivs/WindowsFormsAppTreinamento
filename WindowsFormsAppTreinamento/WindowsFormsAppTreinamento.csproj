@@ -46,16 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbxSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbxSobre.Designer.cs">
+      <DependentUpon>AbxSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastrarCep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastrarCep.Designer.cs">
+      <DependentUpon>FrmCadastrarCep.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCep.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCep.Designer.cs">
       <DependentUpon>FrmCep.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AbxSobre.resx">
+      <DependentUpon>AbxSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastrarCep.resx">
+      <DependentUpon>FrmCadastrarCep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCep.resx">
       <DependentUpon>FrmCep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

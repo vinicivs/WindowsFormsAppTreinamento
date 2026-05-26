@@ -16,7 +16,7 @@ namespace WindowsFormsAppTreinamento
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCep());
+            Application.Run(new FrmPrincipal());
         }
     }
 }
