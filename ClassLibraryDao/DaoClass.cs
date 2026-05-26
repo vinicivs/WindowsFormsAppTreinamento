@@ -86,14 +86,14 @@ namespace ClassLibraryDao
             //Atualiza tabela de CEP
             _sql = "";
             _sql = _sql + "UPDATE CEP SET";
-            _sql = _sql + "             MeuBancoDeDados.CEP = '" + this.MdClass.Cep.ToString() + "',";
-            _sql = _sql + "             MeuBancoDeDados.LOGRADOURO = '" + this.MdClass.Logradouro.ToString() + "',";
-            _sql = _sql + "             MeuBancoDeDados.NUMERO = '" + this.MdClass.Numero.ToString() + "',";
-            _sql = _sql + "             MeuBancoDeDados.COMPLEMENTO = '" + this.MdClass.Complemento.ToString() + "',";
-            _sql = _sql + "             MeuBancoDeDados.BAIRRO = '" + this.MdClass.Bairro.ToString() + "'";
-            _sql = _sql + "             MeuBancoDeDados.CIDADE = '" + this.MdClass.Cidade.ToString() + "'";
-            _sql = _sql + "             MeuBancoDeDados.UF = '" + this.MdClass.ToString() + "'";
-            _sql = _sql + "             WHERE MeuBancoDeDados.ID = " + this.MdClass.Id;
+            _sql = _sql + "             CEP = '" + this.MdClass.Cep.ToString() + "',";
+            _sql = _sql + "             LOGRADOURO = '" + this.MdClass.Logradouro.ToString() + "',";
+            _sql = _sql + "             NUMERO = '" + this.MdClass.Numero + "',";
+            _sql = _sql + "             COMPLEMENTO = '" + this.MdClass.Complemento + "',";
+            _sql = _sql + "             BAIRRO = '" + this.MdClass.Bairro.ToString() + "',";
+            _sql = _sql + "             CIDADE = '" + this.MdClass.Cidade.ToString() + "',";
+            _sql = _sql + "             UF = '" + this.MdClass.Uf.ToString() + "'";
+            _sql = _sql + "             WHERE ID = " + this.MdClass.Id;
 
             _cmd = new SqlCommand(_sql, _myconn);
             _cmd.CommandText = _sql;

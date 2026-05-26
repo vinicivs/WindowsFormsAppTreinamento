@@ -52,6 +52,12 @@
     <Compile Include="AbxSobre.Designer.cs">
       <DependentUpon>AbxSobre.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAtualizarCep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAtualizarCep.Designer.cs">
+      <DependentUpon>frmAtualizarCep.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCadastrarCep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AbxSobre.resx">
       <DependentUpon>AbxSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAtualizarCep.resx">
+      <DependentUpon>frmAtualizarCep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadastrarCep.resx">
       <DependentUpon>FrmCadastrarCep.cs</DependentUpon>

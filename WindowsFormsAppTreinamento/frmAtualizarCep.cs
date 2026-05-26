@@ -11,12 +11,14 @@ using ClassLibraryBus;
 
 namespace WindowsFormsAppTreinamento
 {
-    public partial class FrmCadastrarCep : Form
+    public partial class frmAtualizarCep : Form
     {
-        public FrmCadastrarCep()
+        public frmAtualizarCep()
         {
             InitializeComponent();
         }
+
+        public string Cep { get; internal set; }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
@@ -24,7 +26,21 @@ namespace WindowsFormsAppTreinamento
             this.Close();
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        private void frmAtualizarCep_Load(object sender, EventArgs e)
+        {
+            var pesquisarcep = ClassLibraryBus.BusClass.Localizar(Cep);
+
+            txtId.Text = pesquisarcep.Id.ToString();
+            mskCep.Text = pesquisarcep.Cep;
+            txtLogradouro.Text = pesquisarcep.Logradouro;
+            txtNumero.Text = pesquisarcep.Numero;
+            txtComplemento.Text = pesquisarcep.Complemento;
+            txtBairro.Text = pesquisarcep.Bairro;
+            txtCidade.Text = pesquisarcep.Cidade;
+            cboUf.Text = pesquisarcep.Uf;
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
         {
             // Valida o campo de CEP
             if (mskCep.Text == "     -")
@@ -45,11 +61,12 @@ namespace WindowsFormsAppTreinamento
             }
 
             // Cria um novo objeto MdClass com os dados do formulário
-            BusClass.Inserir(new ClassLibraryMd.MdClass
+            BusClass.Alterar(new ClassLibraryMd.MdClass
             {
+                Id = int.Parse(txtId.Text),
                 Cep = mskCep.Text,
                 Logradouro = txtLogradouro.Text,
-                Numero = txtNumero.Text,
+                Numero = txtNumero.Text ,
                 Complemento = txtComplemento.Text,
                 Bairro = txtBairro.Text,
                 Cidade = txtCidade.Text,
@@ -57,8 +74,10 @@ namespace WindowsFormsAppTreinamento
             });
 
             // Exibe uma mensagem de sucesso
-            MessageBox.Show("CEP cadastrado com sucesso!");
+            MessageBox.Show("CEP alterado com sucesso!");
 
+            // Fecha o formulário
+            this.Close();
         }
     }
 }

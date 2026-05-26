@@ -33,6 +33,18 @@ namespace ClassLibraryBus
 
         }
 
+        public static int Apagar(MdClass ceps_)
+        {
+            DaoClass ceps = new DaoClass();
+
+            ceps.MdClass = ceps_;
+
+            ceps.MdClass.Id = ceps_.Id;
+
+            return ceps.Deletar();
+
+        }
+
         public static List<MdClass> Listagem()
         {
 

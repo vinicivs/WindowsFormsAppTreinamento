@@ -44,8 +44,8 @@
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.cboUf = new System.Windows.Forms.ComboBox();
             this.gbxAcoes = new System.Windows.Forms.GroupBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.ttpLegenda = new System.Windows.Forms.ToolTip(this.components);
             this.gbxAcoes.SuspendLayout();
             this.SuspendLayout();
@@ -179,17 +179,6 @@
             this.gbxAcoes.TabIndex = 14;
             this.gbxAcoes.TabStop = false;
             // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.Location = new System.Drawing.Point(6, 19);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCadastrar.TabIndex = 0;
-            this.btnCadastrar.Text = "&Cadastrar";
-            this.ttpLegenda.SetToolTip(this.btnCadastrar, "Cadastrar");
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
             // btnSair
             // 
             this.btnSair.Location = new System.Drawing.Point(87, 19);
@@ -200,6 +189,17 @@
             this.ttpLegenda.SetToolTip(this.btnSair, "Sair");
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Location = new System.Drawing.Point(6, 19);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrar.TabIndex = 0;
+            this.btnCadastrar.Text = "&Cadastrar";
+            this.ttpLegenda.SetToolTip(this.btnCadastrar, "Cadastrar");
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // FrmCadastrarCep
             // 

@@ -69,9 +69,60 @@ namespace WindowsFormsAppTreinamento
 
             foreach (var item in listagemceps)
             {
-                
-                dgvCep.Rows.Add(item.Id, item.Cep, item.Logradouro, item.Numero, item.Complemento, item.Bairro, item.Cidade, item.Uf);
+                // Exibir os dados de cada cep no DataGridView
+                dgvCep.Rows.Add(item.Id, item.Cep, item.Logradouro, item.Numero, item.Complemento, item.Bairro, item.Cidade, item.Uf, "Atualizar", "Apagar");
             }
         }
+
+        private void dgvCep_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Ignorar cabeçalho e índices inválidos
+            if (e.RowIndex < 0 || e.ColumnIndex < 0) return;
+
+            // Colunas de botões são as últimas duas: Atualizar e Apagar
+            var coluna = dgvCep.Columns[e.ColumnIndex].Name;
+
+            if (coluna == "clmAtualizar")
+            {
+                frmAtualizarCep atualizarForm = new frmAtualizarCep
+                {
+                    // Passar os dados do cep selecionado para o formulário de atualização
+                    Cep = Convert.ToString(dgvCep.Rows[e.RowIndex].Cells["clmCep"].Value),
+                    
+                };
+
+                atualizarForm.ShowDialog();
+            }
+            else if (coluna == "clmApagar")
+            {
+                // Confirmar exclusão
+                BusClass.Apagar(new MdClass
+                {
+                    Id = Convert.ToInt32(dgvCep.Rows[e.RowIndex].Cells["clmId"].Value)
+                });
+            }
+        }
+
+        private void dgvCep_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            // Limpar o DataGridView antes de exibir os resultados atualizados
+            dgvCep.Rows.Clear();
+
+            //Listagem de Ceps
+            var listagemceps = BusClass.Listagem();
+
+            foreach (var item in listagemceps)
+            {
+                // Exibir os dados de cada cep no DataGridView
+                dgvCep.Rows.Add(item.Id, item.Cep, item.Logradouro, item.Numero, item.Complemento, item.Bairro, item.Cidade, item.Uf, "Atualizar", "Apagar");
+            }
+
+        }
+
     }
 }

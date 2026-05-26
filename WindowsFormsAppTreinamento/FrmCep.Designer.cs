@@ -34,8 +34,6 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.gbxEndereco = new System.Windows.Forms.GroupBox();
             this.dgvCep = new System.Windows.Forms.DataGridView();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnSair = new System.Windows.Forms.Button();
             this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmCep = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmLogradouro = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,7 +42,12 @@
             this.clmBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmCidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmUf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmAtualizar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clmApagar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.ttpLegenda = new System.Windows.Forms.ToolTip(this.components);
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.gbxEndereco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCep)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +85,7 @@
             this.gbxEndereco.Controls.Add(this.dgvCep);
             this.gbxEndereco.Location = new System.Drawing.Point(12, 35);
             this.gbxEndereco.Name = "gbxEndereco";
-            this.gbxEndereco.Size = new System.Drawing.Size(706, 221);
+            this.gbxEndereco.Size = new System.Drawing.Size(969, 221);
             this.gbxEndereco.TabIndex = 3;
             this.gbxEndereco.TabStop = false;
             this.gbxEndereco.Text = "Endereços:";
@@ -98,12 +101,77 @@
             this.clmComplemento,
             this.clmBairro,
             this.clmCidade,
-            this.clmUf});
+            this.clmUf,
+            this.clmAtualizar,
+            this.clmApagar});
             this.dgvCep.Location = new System.Drawing.Point(6, 19);
             this.dgvCep.Name = "dgvCep";
-            this.dgvCep.Size = new System.Drawing.Size(694, 196);
+            this.dgvCep.Size = new System.Drawing.Size(953, 196);
             this.dgvCep.TabIndex = 0;
             this.ttpLegenda.SetToolTip(this.dgvCep, "Listagem de Endereços");
+            this.dgvCep.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCep_CellClick);
+            this.dgvCep.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCep_CellContentClick);
+            // 
+            // clmId
+            // 
+            this.clmId.HeaderText = "Id";
+            this.clmId.Name = "clmId";
+            this.clmId.ReadOnly = true;
+            this.clmId.ToolTipText = "Id";
+            this.clmId.Width = 50;
+            // 
+            // clmCep
+            // 
+            this.clmCep.HeaderText = "Cep";
+            this.clmCep.Name = "clmCep";
+            this.clmCep.ToolTipText = "Cep";
+            // 
+            // clmLogradouro
+            // 
+            this.clmLogradouro.HeaderText = "Logradouro";
+            this.clmLogradouro.Name = "clmLogradouro";
+            this.clmLogradouro.ToolTipText = "Logradouro";
+            // 
+            // clmNumero
+            // 
+            this.clmNumero.HeaderText = "Número";
+            this.clmNumero.Name = "clmNumero";
+            this.clmNumero.ToolTipText = "Número";
+            // 
+            // clmComplemento
+            // 
+            this.clmComplemento.HeaderText = "Complemento";
+            this.clmComplemento.Name = "clmComplemento";
+            this.clmComplemento.ToolTipText = "Complemento";
+            // 
+            // clmBairro
+            // 
+            this.clmBairro.HeaderText = "Bairro";
+            this.clmBairro.Name = "clmBairro";
+            this.clmBairro.ToolTipText = "Bairro";
+            // 
+            // clmCidade
+            // 
+            this.clmCidade.HeaderText = "Cidade";
+            this.clmCidade.Name = "clmCidade";
+            this.clmCidade.ToolTipText = "Cidade";
+            // 
+            // clmUf
+            // 
+            this.clmUf.HeaderText = "UF";
+            this.clmUf.Name = "clmUf";
+            this.clmUf.ToolTipText = "UF";
+            this.clmUf.Width = 50;
+            // 
+            // clmAtualizar
+            // 
+            this.clmAtualizar.HeaderText = "Atualizar";
+            this.clmAtualizar.Name = "clmAtualizar";
+            // 
+            // clmApagar
+            // 
+            this.clmApagar.HeaderText = "Apagar";
+            this.clmApagar.Name = "clmApagar";
             // 
             // btnLimpar
             // 
@@ -118,78 +186,31 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(339, 6);
+            this.btnSair.Location = new System.Drawing.Point(420, 6);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 5;
+            this.btnSair.TabIndex = 6;
             this.btnSair.Text = "&Sair";
             this.ttpLegenda.SetToolTip(this.btnSair, "Sair");
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // clmId
+            // btnAtualizar
             // 
-            this.clmId.HeaderText = "Id";
-            this.clmId.Name = "clmId";
-            this.clmId.ReadOnly = true;
-            this.clmId.ToolTipText = "Id";
-            this.clmId.Width = 50;
-            // 
-            // clmCep
-            // 
-            this.clmCep.HeaderText = "Cep";
-            this.clmCep.Name = "clmCep";
-            this.clmCep.ReadOnly = true;
-            this.clmCep.ToolTipText = "Cep";
-            // 
-            // clmLogradouro
-            // 
-            this.clmLogradouro.HeaderText = "Logradouro";
-            this.clmLogradouro.Name = "clmLogradouro";
-            this.clmLogradouro.ReadOnly = true;
-            this.clmLogradouro.ToolTipText = "Logradouro";
-            // 
-            // clmNumero
-            // 
-            this.clmNumero.HeaderText = "Número";
-            this.clmNumero.Name = "clmNumero";
-            this.clmNumero.ReadOnly = true;
-            this.clmNumero.ToolTipText = "Número";
-            // 
-            // clmComplemento
-            // 
-            this.clmComplemento.HeaderText = "Complemento";
-            this.clmComplemento.Name = "clmComplemento";
-            this.clmComplemento.ReadOnly = true;
-            this.clmComplemento.ToolTipText = "Complemento";
-            // 
-            // clmBairro
-            // 
-            this.clmBairro.HeaderText = "Bairro";
-            this.clmBairro.Name = "clmBairro";
-            this.clmBairro.ReadOnly = true;
-            this.clmBairro.ToolTipText = "Bairro";
-            // 
-            // clmCidade
-            // 
-            this.clmCidade.HeaderText = "Cidade";
-            this.clmCidade.Name = "clmCidade";
-            this.clmCidade.ReadOnly = true;
-            this.clmCidade.ToolTipText = "Cidade";
-            // 
-            // clmUf
-            // 
-            this.clmUf.HeaderText = "UF";
-            this.clmUf.Name = "clmUf";
-            this.clmUf.ReadOnly = true;
-            this.clmUf.ToolTipText = "UF";
-            this.clmUf.Width = 50;
+            this.btnAtualizar.Location = new System.Drawing.Point(339, 6);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnAtualizar.TabIndex = 5;
+            this.btnAtualizar.Text = "&Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // FrmCep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 270);
+            this.ClientSize = new System.Drawing.Size(991, 270);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.gbxEndereco);
@@ -217,6 +238,7 @@
         private System.Windows.Forms.DataGridView dgvCep;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.ToolTip ttpLegenda;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCep;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmLogradouro;
@@ -225,7 +247,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmBairro;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmUf;
-        private System.Windows.Forms.ToolTip ttpLegenda;
+        private System.Windows.Forms.DataGridViewButtonColumn clmAtualizar;
+        private System.Windows.Forms.DataGridViewButtonColumn clmApagar;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }
 
