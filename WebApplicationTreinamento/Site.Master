@@ -49,6 +49,7 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Página Inicial</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/WebFormPesquisarCep">Pesquisar Cep</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/WebFormCadastrarCep">Cadastrar Cep</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contato</a></li>
                     </ul>

@@ -149,6 +149,8 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="WebFormAlterarCep.aspx" />
+    <Content Include="WebFormCadastrarCep.aspx" />
     <Content Include="WebFormPesquisarCep.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
@@ -231,6 +233,20 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormAlterarCep.aspx.cs">
+      <DependentUpon>WebFormAlterarCep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormAlterarCep.aspx.designer.cs">
+      <DependentUpon>WebFormAlterarCep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormCadastrarCep.aspx.cs">
+      <DependentUpon>WebFormCadastrarCep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormCadastrarCep.aspx.designer.cs">
+      <DependentUpon>WebFormCadastrarCep.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebFormPesquisarCep.aspx.cs">
       <DependentUpon>WebFormPesquisarCep.aspx</DependentUpon>

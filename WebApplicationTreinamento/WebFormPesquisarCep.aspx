@@ -10,7 +10,7 @@
     <asp:Button ID="btnVoltar" runat="server" Text="Retorno" OnClientClick="history.back(); return false;" />
     <br />
     <asp:GridView ID="gvwDados" runat="server">
-    </asp:GridView>
+</asp:GridView>
     <br />
     <asp:LinkButton ID="lbnVoltar" runat="server" OnClick="lbnVoltar_Click">Inicial</asp:LinkButton>
         
