@@ -127,5 +127,42 @@ namespace ClassLibraryBus
 
         }
 
+        public static MdClass Localizar(int Id_)
+        {
+
+            DaoClass ceps = new DaoClass();
+
+            var dt = ceps.Localizar(Id_);
+
+            MdClass resultado = new MdClass();
+
+            if (dt.Rows.Count <= 0)
+            {
+                return resultado;
+            }
+            else
+            {
+
+                resultado.Id = Convert.ToInt32(dt.Rows[0]["Id"]);
+
+                resultado.Cep = Convert.ToString(dt.Rows[0]["Cep"]);
+
+                resultado.Logradouro = Convert.ToString(dt.Rows[0]["Logradouro"]);
+
+                resultado.Numero = Convert.ToString(dt.Rows[0]["Numero"]);
+
+                resultado.Complemento = Convert.ToString(dt.Rows[0]["Complemento"]);
+
+                resultado.Bairro = Convert.ToString(dt.Rows[0]["Bairro"]);
+
+                resultado.Cidade = Convert.ToString(dt.Rows[0]["Cidade"]);
+
+                resultado.Uf = Convert.ToString(dt.Rows[0]["Uf"]);
+
+                return resultado;
+            }
+
+        }
+
     }
 }

@@ -50,7 +50,7 @@ namespace ClassLibraryDao
             _sql = _sql + "       '" + this.MdClass.Bairro.ToString() + "',";
             _sql = _sql + "       '" + this.MdClass.Cidade.ToString() + "',";
             _sql = _sql + "       '" + this.MdClass.Uf.ToString() + "'";
-            _sql = _sql + ")";
+            _sql = _sql + ") ";
 
             _cmd = new SqlCommand(_sql, _myconn);
             _cmd.CommandText = _sql;
@@ -63,7 +63,7 @@ namespace ClassLibraryDao
                     _myconn.Open();
                 }
                 return _cmd.ExecuteNonQuery();
-
+                
             }
             catch (Exception ex)
             {
@@ -250,5 +250,52 @@ namespace ClassLibraryDao
             }
 
         }
+
+        public DataTable Localizar(int id_)
+        {
+
+            //Listagem tabela cliente
+            _sql = "";
+            _sql = _sql + "             SELECT";
+            _sql = _sql + "             ID,";
+            _sql = _sql + "             CEP,";
+            _sql = _sql + "             LOGRADOURO,";
+            _sql = _sql + "             NUMERO,";
+            _sql = _sql + "             COMPLEMENTO,";
+            _sql = _sql + "             BAIRRO,";
+            _sql = _sql + "             CIDADE,";
+            _sql = _sql + "             UF";
+            _sql = _sql + " FROM ";
+            _sql = _sql + " CEP ";
+            _sql = _sql + " Where ID = " + id_ + "";
+
+            _cmd = new SqlCommand(_sql, _myconn);
+
+            var da = new SqlDataAdapter(_cmd);
+
+            _cmd.CommandText = _sql;
+
+            _dt = new DataTable();
+
+            try
+
+            {
+
+                da.Fill(_dt);
+
+                return _dt;
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+                throw new Exception();
+
+            }
+
+        }
+
     }
 }
