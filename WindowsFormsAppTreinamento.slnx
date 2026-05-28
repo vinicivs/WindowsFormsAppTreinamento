@@ -3,6 +3,7 @@
   <Project Path="ClassLibraryDao/ClassLibraryDao.csproj" Id="266014ff-4fe3-42a8-8aa9-6a79ba7eabb6" />
   <Project Path="ClassLibraryMd/ClassLibraryMd.csproj" Id="6b9a3305-cd83-40e7-9c17-98018de5b266" />
   <Project Path="WebApplicationAPITreinamento/WebApplicationAPITreinamento.csproj" Id="a53697be-290d-4062-9b49-8c919595383c" />
+  <Project Path="WebApplicationMVCTreinamento/WebApplicationMVCTreinamento.csproj" Id="de021a21-e4f8-407a-bed1-e046a2965ff7" />
   <Project Path="WebApplicationTreinamento/WebApplicationTreinamento.csproj" Id="15a484f3-5ee2-4828-b16d-af57ca8e383d" />
   <Project Path="WindowsFormsAppTreinamento/WindowsFormsAppTreinamento.csproj" Id="a3fc32f4-a247-4b2b-97ca-0b482ba1bb93" />
 </Solution>
