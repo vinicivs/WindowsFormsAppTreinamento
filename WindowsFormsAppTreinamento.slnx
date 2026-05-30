@@ -6,4 +6,5 @@
   <Project Path="WebApplicationMVCTreinamento/WebApplicationMVCTreinamento.csproj" Id="de021a21-e4f8-407a-bed1-e046a2965ff7" />
   <Project Path="WebApplicationTreinamento/WebApplicationTreinamento.csproj" Id="15a484f3-5ee2-4828-b16d-af57ca8e383d" />
   <Project Path="WindowsFormsAppTreinamento/WindowsFormsAppTreinamento.csproj" Id="a3fc32f4-a247-4b2b-97ca-0b482ba1bb93" />
+  <Project Path="WpfAppTreinamento/WpfAppTreinamento.csproj" Id="e7a4ae31-44bc-42b6-8b8f-fc5923a87806" />
 </Solution>
