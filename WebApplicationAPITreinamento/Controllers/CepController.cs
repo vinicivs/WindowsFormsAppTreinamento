@@ -84,7 +84,7 @@ namespace WebApplicationAPITreinamento.Controllers
             catch (Exception)
             {
                 // Em caso de erro, retorna um status code 500 (Internal Server Error)
-                return ApiResponseFactory.Erro(this, "Erro ao inserir");
+                return ApiResponseFactory.Erro(this, "Erro ao inserir", 500);
 
                 throw;
             }

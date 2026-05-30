@@ -1,0 +1,31 @@
+﻿@{
+        ViewBag.Title = "Listagem de Cep";
+    }
+
+@model IEnumerable<WebApplicationMVCTreinamento.Models.Ceps>
+
+<h2>Ceps</h2>
+
+<p>
+    @Html.ActionLink("Novo Cep", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Cep</th>
+        <th>Ações</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Cep</td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Excluir", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>
