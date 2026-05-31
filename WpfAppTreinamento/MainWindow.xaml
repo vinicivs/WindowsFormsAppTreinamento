@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppTreinamento"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Ceps" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="757*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="13*"/>
+                <ColumnDefinition Width="193*"/>
+                <ColumnDefinition Width="569*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid x:Name="dgCeps" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="4"/>
+        </Grid>
+
     </Grid>
 </Window>
