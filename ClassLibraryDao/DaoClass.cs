@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,8 @@ namespace ClassLibraryDao
     public class DaoClass
     {
         private String _sql = "";
-        private SqlConnection _myconn = new SqlConnection(@"Persist Security Info=False;User ID=sa;Pwd=123; Initial Catalog=MeuBancoDeDados; Data Source=(localdb)\MSSQLLocalDB");
+        private SqlConnection _myconn = new SqlConnection(@"Server=NOTEBOOKASUSR5\SQLEXPRESS;Initial Catalog=MeuBancoDeDados;User Id=sa;Pwd=123;");
+        //private SqlConnection _myconn = new SqlConnection(@"Persist Security Info=False;User ID=dbo;Pwd=123; Initial Catalog=MeuBancoDeDados; Data Source=(localdb)\MSSQLLocalDB"); // errado***
         //private MySqlConnection _myconn = new MySqlConnection(@"Persist Security Info=False;User ID=bd_robomga;Pwd=Dye122700; Initial Catalog=bd_robomga; Data Source=187.45.196.179"); //Server=servidor\gvinci;Database=Abrava;Uid=sa;Pwd=123;
         private DataSet _ds = new DataSet();
         private SqlCommand _cmd;
@@ -198,7 +200,8 @@ namespace ClassLibraryDao
             catch (Exception ex)
 
             {
-
+                File.AppendAllText(@"C:\Logs\log_servico.txt",
+                    $"[{DateTime.Now}] ERRO ao executar Dao: {ex}\n");
                 throw new Exception();
 
             }

@@ -23,13 +23,16 @@ namespace WpfAppTreinamento
     /// </summary>
     public partial class MainWindow : Window
     {
-        ObservableCollection<MdClass> ceps = new ObservableCollection<MdClass>();
+        // ObservableCollection para armazenar os CEPs
+        readonly ObservableCollection<MdClass> ceps = new ObservableCollection<MdClass>();
 
         public MainWindow()
         {
+            // Inicializa os componentes da janela
             InitializeComponent();
-
+            // Carrega os CEPs ao iniciar a aplicação
             ceps = new ObservableCollection<MdClass>(BusClass.Listagem());
+            // Define o ItemsSource do DataGrid para a coleção de CEPs
             dgCeps.ItemsSource = ceps;
         }
     }
