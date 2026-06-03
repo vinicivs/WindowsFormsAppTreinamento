@@ -33,7 +33,6 @@
             this.tsmiPesquisarCep = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiCadastrarCep = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiSair = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTxt = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiXml = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +40,7 @@
             this.tsmiEmail = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiXls = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiXlsx = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSair = new System.Windows.Forms.ToolStripMenuItem();
             this.mspMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +69,7 @@
             // tsmiPesquisarCep
             // 
             this.tsmiPesquisarCep.Name = "tsmiPesquisarCep";
-            this.tsmiPesquisarCep.Size = new System.Drawing.Size(180, 22);
+            this.tsmiPesquisarCep.Size = new System.Drawing.Size(148, 22);
             this.tsmiPesquisarCep.Text = "Pesquisar &Cep";
             this.tsmiPesquisarCep.ToolTipText = "Pesquisar Cep";
             this.tsmiPesquisarCep.Click += new System.EventHandler(this.tsmiPesquisarCep_Click);
@@ -77,7 +77,7 @@
             // tsmiCadastrarCep
             // 
             this.tsmiCadastrarCep.Name = "tsmiCadastrarCep";
-            this.tsmiCadastrarCep.Size = new System.Drawing.Size(180, 22);
+            this.tsmiCadastrarCep.Size = new System.Drawing.Size(148, 22);
             this.tsmiCadastrarCep.Text = "&Cadastrar Cep";
             this.tsmiCadastrarCep.ToolTipText = "Cadastrar Cep";
             this.tsmiCadastrarCep.Click += new System.EventHandler(this.tsmiCadastrarCep_Click);
@@ -88,14 +88,6 @@
             this.toolStripMenuItem2.Size = new System.Drawing.Size(49, 20);
             this.toolStripMenuItem2.Text = "&Sobre";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // tsmiSair
-            // 
-            this.tsmiSair.Name = "tsmiSair";
-            this.tsmiSair.Size = new System.Drawing.Size(38, 20);
-            this.tsmiSair.Text = "&Sair";
-            this.tsmiSair.ToolTipText = "Sair";
-            this.tsmiSair.Click += new System.EventHandler(this.tsmiSair_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -124,6 +116,7 @@
             this.tsmiXml.Size = new System.Drawing.Size(189, 22);
             this.tsmiXml.Text = "Arquivo (.xml)";
             this.tsmiXml.ToolTipText = "Arquivo (.xml)";
+            this.tsmiXml.Click += new System.EventHandler(this.tsmiXml_Click);
             // 
             // tsmiJson
             // 
@@ -131,6 +124,7 @@
             this.tsmiJson.Size = new System.Drawing.Size(189, 22);
             this.tsmiJson.Text = "Arquivo (.&json)";
             this.tsmiJson.ToolTipText = "Arquivo (.json)";
+            this.tsmiJson.Click += new System.EventHandler(this.tsmiJson_Click);
             // 
             // tsmiEmail
             // 
@@ -139,6 +133,7 @@
             this.tsmiEmail.Size = new System.Drawing.Size(189, 22);
             this.tsmiEmail.Text = "E-&mail";
             this.tsmiEmail.ToolTipText = "E-mail";
+            this.tsmiEmail.Click += new System.EventHandler(this.tsmiEmail_Click);
             // 
             // tsmiXls
             // 
@@ -147,6 +142,7 @@
             this.tsmiXls.Size = new System.Drawing.Size(189, 22);
             this.tsmiXls.Text = "Excel (.xls)";
             this.tsmiXls.ToolTipText = "Excel (.xls)";
+            this.tsmiXls.Click += new System.EventHandler(this.tsmiXls_Click);
             // 
             // tsmiXlsx
             // 
@@ -155,6 +151,15 @@
             this.tsmiXlsx.Size = new System.Drawing.Size(189, 22);
             this.tsmiXlsx.Text = "Excel (.xlsx)";
             this.tsmiXlsx.ToolTipText = "Excel (.xlsx)";
+            this.tsmiXlsx.Click += new System.EventHandler(this.tsmiXlsx_Click);
+            // 
+            // tsmiSair
+            // 
+            this.tsmiSair.Name = "tsmiSair";
+            this.tsmiSair.Size = new System.Drawing.Size(38, 20);
+            this.tsmiSair.Text = "&Sair";
+            this.tsmiSair.ToolTipText = "Sair";
+            this.tsmiSair.Click += new System.EventHandler(this.tsmiSair_Click);
             // 
             // FrmPrincipal
             // 

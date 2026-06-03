@@ -50,5 +50,40 @@ namespace WindowsFormsAppTreinamento
             FrmTxt frmTxt = new FrmTxt();
             frmTxt.ShowDialog();
         }
+
+        private void tsmiXml_Click(object sender, EventArgs e)
+        {
+            // Cria uma instância do formulário de manipulação de arquivos XML e exibe-o como uma janela modal
+            FrmXml frmXml = new FrmXml();
+            frmXml.ShowDialog();
+        }
+
+        private void tsmiJson_Click(object sender, EventArgs e)
+        {
+            // Cria uma instância do formulário de manipulação de arquivos JSON e exibe-o como uma janela modal
+            FrmJson frmJson = new FrmJson();
+            frmJson.ShowDialog();
+        }
+
+        private void tsmiEmail_Click(object sender, EventArgs e)
+        {
+            // Cria uma instância do formulário de envio de email e exibe-o como uma janela modal
+            FrmEmail frmEmail = new FrmEmail();
+            frmEmail.ShowDialog();
+        }
+
+        private void tsmiXls_Click(object sender, EventArgs e)
+        {
+            // Cria uma instância do formulário de manipulação de arquivos Excel e exibe-o como uma janela modal
+            FrmXls frmXls = new FrmXls();
+            frmXls.ShowDialog();
+        }
+
+        private void tsmiXlsx_Click(object sender, EventArgs e)
+        {
+            // Cria uma instância do formulário de manipulação de arquivos Excel (formato XLSX) e exibe-o como uma janela modal
+            FrmXlsx frmXlsx = new FrmXlsx();
+            frmXlsx.ShowDialog();
+        }
     }
 }
