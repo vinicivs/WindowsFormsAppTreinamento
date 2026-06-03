@@ -1,0 +1,1 @@
+﻿select * from CEP where CEP = '05185-000';

@@ -43,5 +43,12 @@ namespace WindowsFormsAppTreinamento
             AbxSobre frmSobre = new AbxSobre();
             frmSobre.ShowDialog();
         }
+
+        private void tsmiTxt_Click(object sender, EventArgs e)
+        {
+            // Cria uma instância do formulário de manipulação de arquivos de texto e exibe-o como uma janela modal
+            FrmTxt frmTxt = new FrmTxt();
+            frmTxt.ShowDialog();
+        }
     }
 }

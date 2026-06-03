@@ -13,6 +13,7 @@ namespace WindowsFormsAppTreinamento
     {
         public AbxSobre()
         {
+            // Inicializa os componentes do formulário
             InitializeComponent();
             this.Text = String.Format("Sobre {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
@@ -101,5 +102,11 @@ namespace WindowsFormsAppTreinamento
             }
         }
         #endregion
+
+        private void OkButton_Click(object sender, EventArgs e)
+        {
+            // Fecha o formulário de sobre quando o botão OK for clicado
+            this.Close();
+        }
     }
 }
