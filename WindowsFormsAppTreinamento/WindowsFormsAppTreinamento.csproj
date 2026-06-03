@@ -70,6 +70,18 @@
     <Compile Include="FrmCep.Designer.cs">
       <DependentUpon>FrmCep.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmail.Designer.cs">
+      <DependentUpon>FrmEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJson.Designer.cs">
+      <DependentUpon>FrmJson.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,24 @@
     </Compile>
     <Compile Include="FrmTxt.Designer.cs">
       <DependentUpon>FrmTxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXls.Designer.cs">
+      <DependentUpon>FrmXls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXlsx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXlsx.Designer.cs">
+      <DependentUpon>FrmXlsx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXml.Designer.cs">
+      <DependentUpon>FrmXml.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,11 +126,23 @@
     <EmbeddedResource Include="FrmCep.resx">
       <DependentUpon>FrmCep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmJson.resx">
+      <DependentUpon>FrmJson.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTxt.resx">
       <DependentUpon>FrmTxt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXls.resx">
+      <DependentUpon>FrmXls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXlsx.resx">
+      <DependentUpon>FrmXlsx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXml.resx">
+      <DependentUpon>FrmXml.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

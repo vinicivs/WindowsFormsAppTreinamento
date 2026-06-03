@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnCriarTxt = new System.Windows.Forms.Button();
             this.btnAnexarTxt = new System.Windows.Forms.Button();
             this.btnLerTxt = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.ttpTxt = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // btnCriarTxt
@@ -41,6 +43,7 @@
             this.btnCriarTxt.Size = new System.Drawing.Size(75, 23);
             this.btnCriarTxt.TabIndex = 0;
             this.btnCriarTxt.Text = "&Criar";
+            this.ttpTxt.SetToolTip(this.btnCriarTxt, "Criar");
             this.btnCriarTxt.UseVisualStyleBackColor = true;
             this.btnCriarTxt.Click += new System.EventHandler(this.BtnCriarTxt_Click);
             // 
@@ -51,6 +54,7 @@
             this.btnAnexarTxt.Size = new System.Drawing.Size(75, 23);
             this.btnAnexarTxt.TabIndex = 1;
             this.btnAnexarTxt.Text = "&Anexar";
+            this.ttpTxt.SetToolTip(this.btnAnexarTxt, "Anexar");
             this.btnAnexarTxt.UseVisualStyleBackColor = true;
             this.btnAnexarTxt.Click += new System.EventHandler(this.BtnAnexarTxt_Click);
             // 
@@ -61,6 +65,7 @@
             this.btnLerTxt.Size = new System.Drawing.Size(75, 23);
             this.btnLerTxt.TabIndex = 2;
             this.btnLerTxt.Text = "&Ler";
+            this.ttpTxt.SetToolTip(this.btnLerTxt, "Ler");
             this.btnLerTxt.UseVisualStyleBackColor = true;
             this.btnLerTxt.Click += new System.EventHandler(this.BtnLerTxt_Click);
             // 
@@ -71,6 +76,7 @@
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 3;
             this.btnSair.Text = "&Sair";
+            this.ttpTxt.SetToolTip(this.btnSair, "Sair");
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.BtnSair_Click);
             // 
@@ -96,5 +102,6 @@
         private System.Windows.Forms.Button btnAnexarTxt;
         private System.Windows.Forms.Button btnLerTxt;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.ToolTip ttpTxt;
     }
 }
