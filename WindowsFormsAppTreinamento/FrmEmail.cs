@@ -47,7 +47,11 @@ namespace WindowsFormsAppTreinamento
 
         private void BtnLer_Click(object sender, EventArgs e)
         {
+            // leitura de emails
+            BusEmail.LerEmail(@"C:\Users\Public\Documents");
 
+            // Alerta de leitura de e-mails
+            MessageBox.Show("Leitura de e-mails concluída!");
         }
     }
 }
