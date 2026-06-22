@@ -132,6 +132,9 @@
     <EmbeddedResource Include="FrmCep.resx">
       <DependentUpon>FrmCep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmail.resx">
+      <DependentUpon>FrmEmail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmJson.resx">
       <DependentUpon>FrmJson.cs</DependentUpon>
     </EmbeddedResource>

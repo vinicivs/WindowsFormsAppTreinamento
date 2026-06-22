@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusClass.cs" />
+    <Compile Include="BusEmail.cs" />
     <Compile Include="BusPdf.cs" />
     <Compile Include="BusTxt.cs" />
     <Compile Include="BusJson.cs" />
