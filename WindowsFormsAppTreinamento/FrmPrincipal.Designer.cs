@@ -41,6 +41,7 @@
             this.tsmiXls = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiXlsx = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.arquivopdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mspMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,7 +98,8 @@
             this.tsmiJson,
             this.tsmiEmail,
             this.tsmiXls,
-            this.tsmiXlsx});
+            this.tsmiXlsx,
+            this.arquivopdfToolStripMenuItem});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(69, 20);
             this.toolStripMenuItem3.Text = "E&xemplos";
@@ -161,6 +163,13 @@
             this.tsmiSair.ToolTipText = "Sair";
             this.tsmiSair.Click += new System.EventHandler(this.tsmiSair_Click);
             // 
+            // arquivopdfToolStripMenuItem
+            // 
+            this.arquivopdfToolStripMenuItem.Name = "arquivopdfToolStripMenuItem";
+            this.arquivopdfToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.arquivopdfToolStripMenuItem.Text = "Arquivo (.pdf)";
+            this.arquivopdfToolStripMenuItem.Click += new System.EventHandler(this.arquivopdfToolStripMenuItem_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,5 +203,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiEmail;
         private System.Windows.Forms.ToolStripMenuItem tsmiXls;
         private System.Windows.Forms.ToolStripMenuItem tsmiXlsx;
+        private System.Windows.Forms.ToolStripMenuItem arquivopdfToolStripMenuItem;
     }
 }

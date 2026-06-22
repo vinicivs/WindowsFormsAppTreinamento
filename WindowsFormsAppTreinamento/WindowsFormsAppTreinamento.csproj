@@ -82,6 +82,12 @@
     <Compile Include="FrmJson.Designer.cs">
       <DependentUpon>FrmJson.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPdf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPdf.Designer.cs">
+      <DependentUpon>FrmPdf.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmJson.resx">
       <DependentUpon>FrmJson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPdf.resx">
+      <DependentUpon>FrmPdf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>

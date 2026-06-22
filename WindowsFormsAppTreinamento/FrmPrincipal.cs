@@ -85,5 +85,12 @@ namespace WindowsFormsAppTreinamento
             FrmXlsx frmXlsx = new FrmXlsx();
             frmXlsx.ShowDialog();
         }
+
+        private void arquivopdfToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Cria uma instância do formulário de manipulação de arquivos PDF e exibe-o como uma janela modal
+            FrmPdf frmPdf = new FrmPdf();
+            frmPdf.ShowDialog();
+        }
     }
 }
