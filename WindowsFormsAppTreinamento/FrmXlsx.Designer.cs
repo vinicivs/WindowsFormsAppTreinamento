@@ -55,6 +55,7 @@
             this.BtnLer.Text = "&Ler";
             this.ttpXlsx.SetToolTip(this.BtnLer, "Ler");
             this.BtnLer.UseVisualStyleBackColor = true;
+            this.BtnLer.Click += new System.EventHandler(this.BtnLer_Click);
             // 
             // BtnCriar
             // 
@@ -65,6 +66,7 @@
             this.BtnCriar.Text = "&Criar";
             this.ttpXlsx.SetToolTip(this.BtnCriar, "Criar");
             this.BtnCriar.UseVisualStyleBackColor = true;
+            this.BtnCriar.Click += new System.EventHandler(this.BtnCriar_Click);
             // 
             // FrmXlsx
             // 
