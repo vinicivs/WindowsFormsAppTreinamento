@@ -44,5 +44,10 @@ namespace WindowsFormsAppTreinamento
             MessageBox.Show("Email enviado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
+
+        private void BtnLer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

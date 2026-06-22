@@ -53,6 +53,7 @@
             this.BtnLer.TabIndex = 7;
             this.BtnLer.Text = "&Ler";
             this.BtnLer.UseVisualStyleBackColor = true;
+            this.BtnLer.Click += new System.EventHandler(this.BtnLer_Click);
             // 
             // BtnCriar
             // 
